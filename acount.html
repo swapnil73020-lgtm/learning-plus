@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Create New Account</title>
+  <link rel="stylesheet" href="student.css" />
+</head>
+<body>
+  <header>
+    <h1>Create a New Account</h1>
+  </header>
+
+  <main>
+    <section id="account-form">
+      <form action="/action.php">
+        <h2>Basic Information</h2>
+        <label>
+          Username:
+          <input type="text" name="username" placeholder="Enter your username" required />
+        </label><br><br>
+
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="Enter your email" required />
+        </label><br><br>
+
+        <label>
+          Password:
+          <input type="password" name="password" placeholder="Enter your password" required />
+        </label><br><br>
+
+        <h2>Choose Your Preferences</h2>
+        <p><strong>1. Languages You Want to Master:</strong></p>
+        <label><input type="checkbox" name="language" value="JavaScript" /> JavaScript</label><br>
+        <label><input type="checkbox" name="language" value="Python" /> Python</label><br>
+        <label><input type="checkbox" name="language" value="C++" /> C++</label><br>
+        <label><input type="checkbox" name="language" value="Rust" /> Rust</label><br>
+        <label><input type="checkbox" name="language" value="HTML and CSS" /> HTML and CSS</label><br>
+        <label><input type="checkbox" name="language" value="Go" /> Go</label><br><br>
+
+        <p><strong>2. Frameworks You Want to Work With:</strong></p>
+        <label><input type="checkbox" name="framework" value="Web Development" /> Web Development</label><br>
+        <label><input type="checkbox" name="framework" value="Data Science" /> Data Science</label><br>
+        <label><input type="checkbox" name="framework" value="Game Development" /> Game Development</label><br>
+        <label><input type="checkbox" name="framework" value="Mobile App Development" /> Mobile App Development</label><br>
+        <label><input type="checkbox" name="framework" value="Ethical Hacking" /> Ethical Hacking</label><br>
+        <label><input type="checkbox" name="framework" value="Cyber Security" /> Cyber Security</label><br>
+        <label><input type="checkbox" name="framework" value="Backend and DevOps" /> Backend and DevOps</label><br>
+        <label><input type="checkbox" name="framework" value="Server Management" /> Server Management</label><br><br>
+
+        <input type="submit" value="Submit" />
+        <p>OR</p>
+        <input type="reset" value="Reset" />
+      </form>
+    </section>
+
+    <section id="other-frameworks">
+      <h3>Other Frameworks You're Interested In</h3>
+      <label for="other-frameworks-text">Mention any other frameworks you'd like to explore:</label><br><br>
+      <textarea id="other-frameworks-text" name="other_frameworks" rows="5" cols="50" placeholder="Your suggestions..."></textarea><br><br>
+      <input type="submit" value="Submit" />
+    </section>
+
+    <section id="back-home">
+      <p><a href="learnigplus.html" target="_blank">← Back to Home Page</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Learning Plus. All rights reserved.</p>
+  </footer>
+</body>
+</html>
